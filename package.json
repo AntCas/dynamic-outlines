@@ -1,0 +1,15 @@
+{
+  "name": "dynamic-outlines",
+  "description": "Drop in component for creating a neat outline hover effect",
+  "version": "1.0.0",
+  "author": "Anthony Castrio <anthonycastrio@gmail.com>",
+  "dependencies": {
+  },
+  "keywords": [
+    "css",
+		"style",
+		"outline",
+		"hover style"
+  ],
+  "license": "MIT"
+}
