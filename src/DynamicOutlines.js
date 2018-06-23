@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 /*
-Parent component must have position relative and the same id as itemId.
+Parent component must have position relative and the same id as parentId.
 
 Required Props:
-itemId  // id of parent
+parentId  // id of parent
 
 OptionalProps:
 borderColor    // color of the lines
@@ -29,17 +29,17 @@ export default class DynamicOutlines extends Component {
 	}
 
 	componentDidMount() {
-		const { itemId } = this.props;
-		if (itemId) {
+		const { parentId } = this.props;
+		if (parentId) {
 			try {
-				const clientHeight = document.getElementById(this.props.itemId).clientHeight;
-				const clientWidth = document.getElementById(this.props.itemId).clientWidth;
+				const clientHeight = document.getElementById(this.props.parentId).clientHeight;
+				const clientWidth = document.getElementById(this.props.parentId).clientWidth;
 				this.setState({ clientHeight, clientWidth });
 			} catch (err) {
-				console.log(`ERROR: parent component must have id = ${itemId}`);
+				console.log(`ERROR: parent component must have id = ${parentId}`);
 			}
 		} else {
-			console.log("ERROR: must provide itemId in props");
+			console.log("ERROR: must provide parentId in props");
 		}
   }
 
@@ -77,7 +77,7 @@ export default class DynamicOutlines extends Component {
 				case 'side-a':
 					sideStyles['top'] = `-${borderWidth/2}px`;
 					sideStyles['left'] = `${borderGap + (borderWidth/2)}px`;
-					sideStyles['width'] = hover ? `${clientWidth}` : '0px';
+					sideStyles['width'] = hover ? `${clientWidth}px` : '0px';
 					sideStyles['height'] = `${borderWidth}px`;
 					sideStyles['transitionDelay'] = transitionTime;
 					break;
@@ -85,7 +85,7 @@ export default class DynamicOutlines extends Component {
 				case 'side-b':
 					sideStyles['bottom'] = `-${borderWidth/2}px`;
 					sideStyles['right'] = `${borderGap + (borderWidth/2)}px`;
-					sideStyles['width'] = hover ? `${clientWidth}` : '0px';
+					sideStyles['width'] = hover ? `${clientWidth}px` : '0px';
 					sideStyles['transform'] = 'rotate(180deg)';
 					sideStyles['height'] = `${borderWidth}px`;
 					break;
@@ -94,7 +94,7 @@ export default class DynamicOutlines extends Component {
 					sideStyles['bottom'] = `${borderGap + (borderWidth/2)}px`;
 					sideStyles['left'] = `-${borderWidth/2}px`;
 					sideStyles['width'] = `${borderWidth}px`;
-					sideStyles['height'] = hover ? `${clientHeight}` : '0px';
+					sideStyles['height'] = hover ? `${clientHeight}px` : '0px';
 					sideStyles['transform'] = 'rotate(180deg)';
 					sideStyles['transitionDelay'] = transitionTime;
 					break;
@@ -103,9 +103,10 @@ export default class DynamicOutlines extends Component {
 					sideStyles['top'] = `${borderGap + (borderWidth/2)}px`;
 					sideStyles['right'] = `-${borderWidth/2}px`;
 					sideStyles['width'] = `${borderWidth}px`;
-					sideStyles['height'] = hover ? `${clientHeight}` : '0px';
+					sideStyles['height'] = hover ? `${clientHeight}px` : '0px';
 					break;
 			}
+
 			return (
 				<div key={ idx }
 					className={ sideClass }
