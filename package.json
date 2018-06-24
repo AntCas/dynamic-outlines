@@ -1,7 +1,7 @@
 {
     "name": "dynamic-outlines",
     "description": "Drop in component for creating a neat outline hover effect",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Anthony Castrio <anthonycastrio@gmail.com>",
     "keywords": [
         "React",
@@ -14,7 +14,7 @@
         "type": "git",
         "url": "https://github.com/AntCas/dynamic-outlines.git"
     },
-    "main": "./src/DynamicOutlines.js",
+    "main": "./lib/DynamicOutlines.js",
     "license": "MIT",
     "scripts": {
         "build": "webpack"

@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './src/DynamiceOutlines.js',
+    entry: './src/DynamicOutlines.js',
     output: {
         path: path.resolve('lib'),
         filename: 'DynamicOutlines.js',
