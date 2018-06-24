@@ -1,7 +1,7 @@
 {
     "name": "dynamic-outlines",
     "description": "Drop in component for creating a neat outline hover effect",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Anthony Castrio <anthonycastrio@gmail.com>",
     "keywords": [
         "React",
