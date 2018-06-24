@@ -4,9 +4,9 @@ React Dynamic Outlines
 
 ![Demo of dynamic outlines in action](https://i.imgur.com/k4tN2Tx.gif)
 
-![npm package download](https://www.npmjs.com/package/dynamic-outlines)
+[npm package download](https://www.npmjs.com/package/dynamic-outlines)
 
-![Live Example](https://castrio.me)
+[Live Example](https://castrio.me)
 
 ## Quickstart
 
