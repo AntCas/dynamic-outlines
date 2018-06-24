@@ -2,7 +2,7 @@
 
 React Dynamic Outlines
 
-![Demo of dynamic outlines in action](https://i.imgur.com/bJKkUas.gif)
+![Demo of dynamic outlines in action](https://i.imgur.com/bJKkUas.gifv)
 
 ## Quickstart
 
