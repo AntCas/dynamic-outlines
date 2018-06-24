@@ -2,6 +2,8 @@
 
 React Dynamic Outlines
 
+![Demo of dynamic outlines in action](https://i.imgur.com/bJKkUas.gif)
+
 ## Quickstart
 
 1. Install the package
