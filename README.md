@@ -13,8 +13,11 @@ React Dynamic Outlines
 ## Options
 
 `borderColor` color of the border lines
+
 `borderGap` distance between parent and the border lines
+
 `borderWidth` width of the border lines
+
 `transitionTime` how long it takes the border lines to grow
 
 ## Running the demo

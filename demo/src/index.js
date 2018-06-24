@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-//import DynamicOutlines from 'dynamic-outlines';
-import DynamicOutlines from '../../src/DynamicOutlines';
+import DynamicOutlines from 'dynamic-outlines';
 
 render(
   <div style={{ textAlign: "center" }}>
