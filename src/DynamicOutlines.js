@@ -117,8 +117,8 @@ export default class DynamicOutlines extends Component {
     return (
       <div className="border-lines"
 				style={ borderLineStyles }
-				onMouseEnter={ this.setHoverState(true) }
-				onMouseLeave={ this.setHoverState(false) }>
+				onMouseEnter={ () => this.setHoverState(true) }
+				onMouseLeave={ () => this.setHoverState(false) }>
         { borderLines }
       </div>
     );
