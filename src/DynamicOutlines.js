@@ -21,11 +21,11 @@ export default class DynamicOutlines extends Component {
 			clientWidth: 0,
 			hover: false
 		}
-		this.toggleHover = this.toggleHover.bind(this);
+		this.setHoverState = this.setHoverState.bind(this);
 	}
 
-	toggleHover() {
-		this.setState({ hover: !this.state.hover });
+	setHoverState(newState) {
+		this.setState({ hover: newState });
 	}
 
 	componentDidMount() {
@@ -117,8 +117,8 @@ export default class DynamicOutlines extends Component {
     return (
       <div className="border-lines"
 				style={ borderLineStyles }
-				onMouseEnter={this.toggleHover}
-				onMouseLeave={this.toggleHover}>
+				onMouseEnter={ this.setHoverState(true) }
+				onMouseLeave={ this.setHoverState(false) }>
         { borderLines }
       </div>
     );
